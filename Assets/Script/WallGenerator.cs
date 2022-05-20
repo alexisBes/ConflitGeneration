@@ -8,6 +8,7 @@ public class WallGenerator : MonoBehaviour
 
     public Transform wallBegin;
     public Transform wallPrefab;
+    public Transform holePrefab;
     public Transform player;
 
     private Vector3 lastPosition;
@@ -35,7 +36,15 @@ public class WallGenerator : MonoBehaviour
 
     private Transform SpawnLevelPart(Vector3 spawnPosition)
     {
-        Transform levelParttransform = Instantiate(wallPrefab, spawnPosition, Quaternion.identity);
+        Transform levelParttransform;
+        if (Random.Range(0,10)%2 == 0)
+        {
+            levelParttransform = Instantiate(wallPrefab, spawnPosition, Quaternion.identity);
+        }
+        else
+        {
+            levelParttransform = Instantiate(holePrefab, spawnPosition, Quaternion.identity);
+        }
         return levelParttransform;
     }
 

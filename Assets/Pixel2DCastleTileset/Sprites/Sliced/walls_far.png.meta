@@ -1682,6 +1682,12 @@ TextureImporter:
   - first:
       213: 8609783582578261708
     second: walls_far_559
+  - first:
+      213: -877986971807206814
+    second: walls_far_560
+  - first:
+      213: 6945625539267026484
+    second: walls_far_561
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -13497,7 +13503,7 @@ TextureImporter:
         width: 50
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -13518,7 +13524,7 @@ TextureImporter:
         width: 66
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -13526,6 +13532,48 @@ TextureImporter:
       bones: []
       spriteID: cce31904d881c7770800000000000000
       internalID: 8609783582578261708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls_far_560
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 400
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262b20c3083c0d3f0800000000000000
+      internalID: -877986971807206814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walls_far_561
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 384
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e54e2e0a1d36060800000000000000
+      internalID: 6945625539267026484
       vertices: []
       indices: 
       edges: []
