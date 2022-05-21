@@ -22,7 +22,7 @@ namespace RPGM.Gameplay
             quests = gameObject.GetComponentsInChildren<Quest>();
         }
 
-        public void OnCollisionEnter2D(Collision2D collision)
+        public void OnTriggerEnter2D(Collider2D collision)
         {
             var c = GetConversation();
             if (c != null)
