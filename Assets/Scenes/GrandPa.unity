@@ -12570,6 +12570,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8171158353334016015, guid: 84535a21e4ab6412690b5fa8acc3908e, type: 3}
   m_PrefabInstance: {fileID: 8171158352695083174}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1964851180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964851179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d59f95c8ba33ca4aa333a5a3f624b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!120 &1964851185
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -12683,6 +12695,7 @@ MonoBehaviour:
   caneMask:
     serializedVersion: 2
     m_Bits: 512
+  objToSpawn: {fileID: 7740316014833934093, guid: 46404d008d9fd944abf9f655a3bef334, type: 3}
 --- !u!1 &2080879945
 GameObject:
   m_ObjectHideFlags: 0
