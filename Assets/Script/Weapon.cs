@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using RPGM.Gameplay;
 
 public class Weapon : MonoBehaviour
 {
@@ -10,9 +11,10 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space) && CameraController.switchAvatar == 2) {    
             Shoot();
         }
+        
     }
 
     void Shoot() {

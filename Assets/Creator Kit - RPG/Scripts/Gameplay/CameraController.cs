@@ -26,23 +26,24 @@ namespace RPGM.Gameplay
         
         public GameObject dadyController;
         public GameObject grandpaController;
-        private int switchAvatar = 2;
+        public static int switchAvatar = 2;
 
         void Start() {
             dady.gameObject.SetActive(true);
             baby.gameObject.SetActive(false);
             grandpa.gameObject.SetActive(false);
             dadyController.gameObject.SetActive(true);
+            grandpaController.gameObject.SetActive(false);
         }
 
         void Awake()
         {   
             if (switchAvatar == 1)
-                offset = t_dady.position - transform.position;
-            else if (switchAvatar == 2)
-                offset = t_baby.position - transform.position;
-            else if (switchAvatar == 3)
                 offset = t_grandpa.position - transform.position;
+            else if (switchAvatar == 2)
+                offset = t_dady.position - transform.position;
+            else if (switchAvatar == 3)
+                offset = t_baby.position - transform.position;
         }
 
         void Update()
