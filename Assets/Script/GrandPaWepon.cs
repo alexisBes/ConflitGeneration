@@ -11,6 +11,7 @@ public class GrandPaWepon : MonoBehaviour
     private float caneSpeed = 20f;
     private bool isHooked = false;
     private bool touched = false;
+    public GameObject objToSpawn;
 
     Vector2 target;
 
@@ -24,7 +25,12 @@ public class GrandPaWepon : MonoBehaviour
         }
         if (touched) {
            DefaultCane();
+           CreateObject();
         }
+    }
+
+    private void CreateObject() {
+        Instantiate(objToSpawn, new Vector3(98, -5, 0), Quaternion.identity);
     }
 
     private void StartCane() {

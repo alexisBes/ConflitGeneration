@@ -21,12 +21,14 @@ public class Ball : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D hit) {
-        Enemy enemy = hit.GetComponent<Enemy>();
-		if (enemy != null)
-		{
-			enemy.TakeDamage(damage);
-		}
-        //Instantiate(effectImpact, transform.position, transform.rotation);
-        Destroy(gameObject);
+        if (hit.CompareTag("Block")) {
+            Enemy enemy = hit.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage);
+            }
+            //Instantiate(effectImpact, transform.position, transform.rotation);
+            Destroy(gameObject);
+        }
     }
 }
