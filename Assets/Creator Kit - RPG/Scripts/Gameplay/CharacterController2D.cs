@@ -53,12 +53,12 @@ namespace RPGM.Gameplay
         {
             
             velocity = Mathf.Clamp01(velocity + Time.deltaTime * acceleration);
-            //UpdateAnimator(nextMoveCommand);
+            UpdateAnimator(nextMoveCommand);
             rigidbody2D.velocity = Vector2.SmoothDamp(rigidbody2D.velocity, nextMoveCommand * speed, ref currentVelocity, acceleration, speed);
-            //if((nextMoveCommand.x < 0 && facingRight) || (nextMoveCommand.x > 0 && !facingRight)) {
-            //    facingRight = !facingRight;
-            //    transform.Rotate(new Vector3(0, 180, 0));
-            //}
+            if((nextMoveCommand.x < 0 && facingRight) || (nextMoveCommand.x > 0 && !facingRight)) {
+                facingRight = !facingRight;
+                transform.Rotate(new Vector3(0, 180, 0));
+            }
         }
 
         void UpdateAnimator(Vector3 direction)
@@ -75,7 +75,7 @@ namespace RPGM.Gameplay
             switch (state)
             {
                 case State.Idle:
-                //    IdleState();
+                    IdleState();
                     break;
                 case State.Moving:
                     MoveState();
