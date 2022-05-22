@@ -52,7 +52,6 @@ namespace RPGM.Events
             }
 
             //show the dialog
-            model.dialog.Show(position, ci.text);
             var animator = gameObject.GetComponent<Animator>();
             if (animator != null)
             {
@@ -114,7 +113,6 @@ namespace RPGM.Events
             }
 
             //if conversation has an icon associated, this will display it.
-            model.dialog.SetIcon(ci.image);
         }
 
     }
