@@ -10,12 +10,12 @@ public class BabyController : MonoBehaviour
     public GameObject mgameObject;
 
     private bool IsMoving = false;
-    private AudioSource audio;
+    public AudioSource audio;
 
     // Start is called before the first frame update
     void Start()
     {
-        audio = GetComponent<AudioSource>();
+        
     }
 
     // Update is called once per frame
