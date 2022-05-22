@@ -26,13 +26,13 @@ namespace RPGM.Gameplay
         
         public GameObject dadyController;
         public GameObject grandpaController;
-        public static int switchAvatar = 2;
+        public static int switchAvatar = 3;
 
         void Start() {
-            dady.gameObject.SetActive(true);
-            baby.gameObject.SetActive(false);
+            dady.gameObject.SetActive(false);
+            baby.gameObject.SetActive(true);
             grandpa.gameObject.SetActive(false);
-            dadyController.gameObject.SetActive(true);
+            dadyController.gameObject.SetActive(false);
             grandpaController.gameObject.SetActive(false);
         }
 
