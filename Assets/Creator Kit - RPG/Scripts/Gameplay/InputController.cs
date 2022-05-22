@@ -25,15 +25,15 @@ namespace RPGM.UI
         
         void Update()
         {
-            switch (state)
-            {
-                case State.CharacterControl:
-                    CharacterControl();
-                    break;
-                case State.DialogControl:
-                    DialogControl();
-                    break;
-            }
+            //switch (state)
+           // {
+               // case State.CharacterControl:
+            CharacterControl();
+              //      break;
+              //  case State.DialogControl:
+              //      DialogControl();
+              //      break;
+            //}
         }
 
         void DialogControl()
