@@ -251,7 +251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3273605809934700986, guid: 1c14ebde4b5e54881a67b686f46e6b1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 128.18
+      value: 13.6
       objectReference: {fileID: 0}
     - target: {fileID: 3273605809934700986, guid: 1c14ebde4b5e54881a67b686f46e6b1d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -375,9 +375,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1276411743}
     m_Modifications:
+    - target: {fileID: 81509864160565448, guid: 252e15bf85fde92459d5883062d9834b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.603163
+      objectReference: {fileID: 0}
+    - target: {fileID: 81509864160565448, guid: 252e15bf85fde92459d5883062d9834b, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.1984185
+      objectReference: {fileID: 0}
     - target: {fileID: 3186241047504217407, guid: 252e15bf85fde92459d5883062d9834b, type: 3}
       propertyPath: m_Name
       value: above_trap
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122096594513698873, guid: 252e15bf85fde92459d5883062d9834b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5842664
+      objectReference: {fileID: 0}
+    - target: {fileID: 7122096594513698873, guid: 252e15bf85fde92459d5883062d9834b, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.20786679
       objectReference: {fileID: 0}
     - target: {fileID: 7608316193158050741, guid: 252e15bf85fde92459d5883062d9834b, type: 3}
       propertyPath: m_RootOrder
@@ -833,7 +849,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412354547}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 155.1991, y: 0.7288685, z: 0}
+  m_LocalPosition: {x: 40.619102, y: 0.7288685, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 641626010}
@@ -1987,7 +2003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1270d4db49dd35946bffebed0b7c0aa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moovementSpped: 10
+  moovementSpped: 5
   animator: {fileID: 1078504864}
   trap: {fileID: 1463755866}
   mgameObject: {fileID: 1063625973}
@@ -2092,7 +2108,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!82 &1078504870
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3312,7 +3328,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816054730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 113.38, y: -1.193, z: -0.7273361}
+  m_LocalPosition: {x: -1.94, y: -1.193, z: -0.7273361}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1078504867}
@@ -4113,6 +4129,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8171158353334016008, guid: 84535a21e4ab6412690b5fa8acc3908e, type: 3}
       propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8171158353334016008, guid: 84535a21e4ab6412690b5fa8acc3908e, type: 3}
+      propertyPath: m_GravityScale
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8171158353334016009, guid: 84535a21e4ab6412690b5fa8acc3908e, type: 3}
