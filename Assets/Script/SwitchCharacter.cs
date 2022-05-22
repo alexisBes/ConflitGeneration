@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using RPGM.Gameplay;
@@ -7,7 +7,7 @@ public class SwitchCharacter : MonoBehaviour
     public GameObject dady;
     public GameObject baby;
     public GameObject grandpa;
-
+    public GameObject g_controller;
     public enum State {
         Dady,
         Grandpa,
@@ -17,25 +17,20 @@ public class SwitchCharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dady.gameObject.SetActive(true);
-        baby.gameObject.SetActive(false);
+        dady.gameObject.SetActive(false);
+        baby.gameObject.SetActive(true);
         grandpa.gameObject.SetActive(false);
+        g_controller.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.S)) {
-            SwitchCharac();
-        }
     }
 
-    void SwitchCharac() {
-        float t = 0;
-        float time = 10;
-        while (t < time) {
-            t += Time.deltaTime;
-            switch(switchAvatar) {
+    public void SwitchCharac() {
+        
+        switch(switchAvatar) {
             case 1:
                 switchAvatar = 2;
                 dady.gameObject.SetActive(true);
@@ -55,6 +50,7 @@ public class SwitchCharacter : MonoBehaviour
                 grandpa.gameObject.SetActive(true);
                 break;
         }
-        }
+        
     }
 }
+*/

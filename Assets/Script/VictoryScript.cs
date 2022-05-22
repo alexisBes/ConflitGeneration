@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class VictoryScript : MonoBehaviour
 {
     public Transform GénéalogicalDote;
+    public GameObject victoryUI;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,7 @@ public class VictoryScript : MonoBehaviour
             Vector3 position = GénéalogicalDote.transform.position;
             position.x += 1;
             Transform test = Instantiate(GénéalogicalDote, position, Quaternion.identity, GénéalogicalDote.parent);
+            victoryUI.SetActive(true);
         }
     }
 }

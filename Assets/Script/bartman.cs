@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RemoveTrap : MonoBehaviour
+public class bartman : MonoBehaviour
 {
-    public GameObject trap;
+    public int speedx = 10;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,10 +14,8 @@ public class RemoveTrap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnTriggerEnter2D(Collider2D collider) {
-        Debug.Log("Trigger");
+        Vector3 movement = new Vector3(speedx, 0, 0) * Time.deltaTime;
+        transform.Translate(movement);
     }
 }
+ 
