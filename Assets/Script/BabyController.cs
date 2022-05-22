@@ -9,10 +9,13 @@ public class BabyController : MonoBehaviour
     public GameObject trap;
     public GameObject mgameObject;
 
+    private bool IsMoving = false;
+    private AudioSource audio;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -21,7 +24,24 @@ public class BabyController : MonoBehaviour
         animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
         var movement = Input.GetAxis("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * moovementSpped;
-        
+        if(movement != 0)
+        {
+            IsMoving = true;
+        }
+        else
+        {
+            IsMoving = false;
+        }
+
+        if (IsMoving)
+        {
+            if (!audio.isPlaying)
+                audio.Play();
+        }
+        else
+        {
+            audio.Stop();
+        }
     }
     
     void OnTriggerEnter2D(Collider2D hit) {
