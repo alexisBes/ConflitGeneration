@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class audio_controller : MonoBehaviour
 {
-    public AudioSource source;
-    public GameObject source1;
-    public GameObject source2;
-    public GameObject source3;
+    public AudioSource Sharksource;
+    public GameObject BGsource;
 
     // Start is called before the first frame update
     void Start()
@@ -18,16 +16,16 @@ public class audio_controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (source1.GetComponent<AudioSource>().isPlaying || source2.GetComponent<AudioSource>().isPlaying || source3.GetComponent<AudioSource>().isPlaying)
+        if (Sharksource.isPlaying)
         {
-            if (source.isPlaying)
+            if (BGsource.GetComponent<AudioSource>().isPlaying)
             {
-                source.Stop();
+                BGsource.GetComponent<AudioSource>().Stop();
             }
         }
-        else if (!source.isPlaying)
+        else if (!BGsource.GetComponent<AudioSource>().isPlaying)
         {
-            source.Play();
+            BGsource.GetComponent<AudioSource>().Play();
         }
     }
 }

@@ -908,7 +908,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 412354547}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 118.18004, y: 0.7288685, z: 0}
+  m_LocalPosition: {x: 118.8291, y: 0.7288685, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 641626010}
@@ -2340,8 +2340,9 @@ GameObject:
   - component: {fileID: 1078504864}
   - component: {fileID: 1078504868}
   - component: {fileID: 1078504869}
-  - component: {fileID: 1078504870}
   - component: {fileID: 1078504871}
+  - component: {fileID: 1078504870}
+  - component: {fileID: 1078504872}
   m_Layer: 0
   m_Name: "b\xE9b\xE9-removebg-preview-removebg-preview_4"
   m_TagString: Player
@@ -2679,6 +2680,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1078504872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078504863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2190a5c4ade1c89408afe6840165c6dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sharksource: {fileID: 1078504870}
+  BGsource: {fileID: 1635046395}
 --- !u!1001 &1103971508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2750,6 +2765,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8171158353334016015, guid: 84535a21e4ab6412690b5fa8acc3908e, type: 3}
   m_PrefabInstance: {fileID: 839086752}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1127769206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127769205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2190a5c4ade1c89408afe6840165c6dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sharksource: {fileID: 1127769212}
+  BGsource: {fileID: 1635046395}
 --- !u!61 &1127769211
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3454,7 +3483,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1635046397}
   - component: {fileID: 1635046396}
-  - component: {fileID: 1635046398}
   m_Layer: 0
   m_Name: Ambiant Music
   m_TagString: Untagged
@@ -3572,22 +3600,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1635046398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1635046395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2190a5c4ade1c89408afe6840165c6dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  source: {fileID: 1635046396}
-  source1: {fileID: 729694267}
-  source2: {fileID: 1935158006}
-  source3: {fileID: 1078504863}
 --- !u!1 &1654544957 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1625517520146064040, guid: 20fc346213281654a920c8ed1ddfeff0, type: 3}
@@ -4237,6 +4249,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8171158353334016015, guid: 84535a21e4ab6412690b5fa8acc3908e, type: 3}
   m_PrefabInstance: {fileID: 8171158352695083174}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1964851180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964851179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2190a5c4ade1c89408afe6840165c6dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Sharksource: {fileID: 1964851188}
+  BGsource: {fileID: 1635046395}
 --- !u!120 &1964851185
 LineRenderer:
   m_ObjectHideFlags: 0
